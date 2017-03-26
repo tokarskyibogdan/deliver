@@ -4,8 +4,8 @@
 http://dev-deliver-hw.pantheonsite.io/
 
 #### wordpress
-login => admin
-pass  => lol
+##### login => admin
+##### pass  => lol
 
 ### use command bellow in vendors folder to install components 
 
