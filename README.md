@@ -1,9 +1,16 @@
 # GekHub Homework 
 ## Deliver Theme
 
+http://dev-deliver-hw.pantheonsite.io/
 
-use command bellow to install components in vendors folder
+#### wordpress
+login => admin
+pass  => lol
+
+### use command bellow in vendors folder to install components 
+
 ``$npm i ``
 
-use command bellow to compile style files in vendors folder
+### use command bellow in vendors folder to compile style files 
+
 ``$gulp default ``
