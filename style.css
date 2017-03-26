@@ -1,0 +1,575 @@
+/*
+Theme Name: _tk
+Theme URI: http://themekraft.com/store/_tk-free-wordpress-starter-theme-based-on-twitter-bootstrap/
+Author: ThemeKraft
+Author URI: http://themekraft.com/
+Description: Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress. You can find me on GitHub. Fork me! I'm waiting for you ;)
+Version: 1.1.10
+License: GNU General Public License v3.0 /
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: gray, light, two-columns, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, sticky-post,  theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+This theme is the most seamless and minimalistic integration of Twitter Bootstrap Framework into
+the _s starter theme from Automattic, the guys behind WordPress.
+
+_s (or Underscores) http://underscores.me/, (C) 2012-2013 Automattic, Inc. Twitter Bootstrap
+
+Credits:
+
+1. Bootstrap
+
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=f58353a31151a8c05d7c)
+ * Config saved to config.json and https://gist.github.com/f58353a31151a8c05d7c
+
+2. wp_bootstrap_navwalker
+
+* Class Name: wp_bootstrap_navwalker
+* GitHub URI: https://github.com/twittem/wp-bootstrap-navwalker
+
+3. Glyphicons
+
+ * http://getbootstrap.com/components/
+
+*/
+/* My Minimal WordPress Styling comes here */
+/* This is a small security for too long strings titles */
+.site-header-inner {
+  padding: 2% 15px;
+  border-bottom: solid #ccc 1px;
+}
+.navbar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.navbar-collapse {
+  padding: 0;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  background-color: transparent !important;
+  color: #87b672;
+}
+.navbar-default .navbar-nav li a,
+.post .page-title,
+.widget-title,
+.footer-title {
+  color: #666262;
+  padding: 0;
+  font: 500 18px Avenir;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.navbar-default .navbar-nav li a a,
+.post .page-title a,
+.widget-title a,
+.footer-title a {
+  color: #666262;
+  text-decoration: none;
+}
+.navbar-default .navbar-nav li a a:hover,
+.post .page-title a:hover,
+.widget-title a:hover,
+.footer-title a:hover {
+  color: #87b672;
+}
+.navbar-default .navbar-nav li {
+  margin-right: 40px;
+}
+.page-main-title {
+  margin-bottom: 3%;
+  background: url("http://localhost:8888/deliver/wp-content/uploads/2017/03/img.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  padding-top: 1%;
+}
+.page-main-title h1 {
+  text-transform: uppercase;
+  margin: 0;
+  color: #fefefe;
+  font: 600 36px Avenir;
+}
+.post {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5%;
+  margin-bottom: 6%;
+}
+.post-meta {
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  margin: 2% 0 1% 0;
+  font: 500 14px Avenir;
+}
+.post-meta li,
+.post-meta a {
+  display: inline-block;
+  color: #9b9999;
+  text-decoration: none;
+  background-color: #efefef;
+}
+.post-meta li {
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.post-meta li i {
+  margin-right: 8px;
+  font-size: 13px;
+}
+.feature-image {
+  margin-bottom: 2%;
+}
+.blog-pagination {
+  margin: 10% 0 5% 0;
+}
+.blog-pagination .next,
+.blog-pagination .prev {
+  display: none;
+}
+.blog-pagination .page-numbers {
+  padding: 7px 15px;
+  font: 500 18px Avenir;
+  color: #666262;
+}
+.blog-pagination .page-numbers:hover {
+  background-color: #87b672;
+  text-decoration: none;
+}
+.blog-pagination .current {
+  background-color: #87b672;
+}
+.widget-title {
+  margin-top: 0;
+}
+.widget .nav li {
+  color: #9b9999;
+}
+.widget .nav li a {
+  display: inline-block;
+  color: #9b9999;
+  padding: 0;
+}
+.widget .nav li a:hover {
+  background-color: transparent;
+  color: #6b9442;
+}
+.widget_recent_entries .nav li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+.widget_recent_entries .nav li:last-child {
+  border-bottom: none;
+}
+footer {
+  background-color: #333;
+  color: #9b9999;
+}
+.site-info {
+  border-top: 1px solid #808080;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+.copyrights,
+.site-privacy-info {
+  font: 500 12px Avenir;
+  text-transform: uppercase;
+}
+.copyrights a,
+.site-privacy-info a {
+  color: #808080;
+  text-decoration: none;
+}
+.copyrights a:hover,
+.site-privacy-info a:hover {
+  color: #fff;
+}
+.site-privacy-info {
+  text-align: right;
+}
+@media (max-width: 992px) {
+  .site-privacy-info {
+    text-align: left;
+    margin-top: 1%;
+  }
+}
+.nav>li>a:focus,
+.nav>li>a:hover {
+  background-color: transparent;
+}
+#footer-menu {
+  margin-left: 5px;
+}
+#footer-menu li {
+  position: relative;
+  float: none;
+}
+#footer-menu li:before {
+  content: "";
+  height: 10px;
+  width: 7px;
+  background: url("http://dev-deliver-hw.pantheonsite.io/wp-content/uploads/2017/03/bullet.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 25%;
+}
+#footer-menu li a {
+  padding: 0 0 0 15px;
+  color: #9b9999;
+}
+#footer-menu li a:hover {
+  color: #fff;
+}
+.footer-title {
+  color: #fff;
+  margin-bottom: 4%;
+}
+@media (max-width: 1199px) {
+  .footer-title {
+    margin: 1% 0;
+  }
+}
+.footer-inner {
+  padding: 3% 0;
+}
+.footer-contact-info p {
+  padding-right: 35%;
+}
+.footer-contact-info-phone {
+  font: 500 16px Avenir;
+}
+.footer-about-section {
+  padding-top: 1%;
+}
+.footer-about-section p {
+  margin-top: 6%;
+}
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+  background-color: transparent;
+}
+.dropdown-menu {
+  background-color: #686868;
+  border: 1x solid #fff;
+  border-radius: 4px;
+  padding-left: 10px;
+  left: 100%;
+}
+.our-team-section p,
+.about-us-content p,
+.about-us-missions p {
+  color: #8f8f8f;
+  font: 400 16px/24px 'Helvetica Neue';
+}
+.our-team-section h3,
+.about-us-content h3,
+.about-us-missions h3,
+.our-team-section h4,
+.about-us-content h4,
+.about-us-missions h4 {
+  margin: 0;
+  font: 500 22px 'Avenir';
+  text-transform: uppercase;
+  color: #5f5b5b;
+}
+.our-team-section h4,
+.about-us-content h4,
+.about-us-missions h4 {
+  font-size: 18px;
+}
+.our-team-section,
+.about-us-content {
+  text-align: center;
+}
+@media (min-width: 1199px) {
+  .our-team-section p,
+  .about-us-content p {
+    width: 60%;
+    display: inline-block;
+  }
+}
+.about-us-missions {
+  margin: 5% 0 2% 0;
+  padding-top: 5%;
+  border-top: 1px solid #c2c2c2;
+}
+.about-us-missions p {
+  padding-right: 20px;
+}
+@media (min-width: 1199px) {
+  .about-us-missions .col-md-4:nth-child(2) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1199px) {
+  .about-us-missions .col-md-4:first-child {
+    padding-left: 0;
+  }
+}
+@media (min-width: 1199px) {
+  .about-us-missions .col-md-4:last-child {
+    padding-right: 0;
+  }
+}
+.our-team-section {
+  background-color: #efefef;
+  padding: 4% 0;
+}
+body {
+  word-wrap: break-word;
+}
+.text-white {
+  color: #fff;
+}
+/* Alignment */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+/* Images and wp-captions should always fit and be responsive */
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+img[class*="wp-image-"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.wp-caption {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  max-width: 100%;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+.wp-caption.aligncenter {
+  margin-bottom: 10px;
+}
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+}
+.wp-caption .wp-caption-text {
+  text-align: center;
+  margin-top: 10px;
+}
+/* WP Gallery */
+.gallery {
+  margin-bottom: 1.5em;
+}
+.gallery a img {
+  border: none;
+  height: auto;
+  max-width: 90%;
+}
+.gallery dd {
+  margin: 0;
+}
+.gallery-caption {
+  display: block;
+}
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+/* Text meant only for screen readers */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,0.6);
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar */
+}
+/* Content */
+.main-content-inner {
+  padding-bottom: 1.5em;
+}
+.hentry {
+  margin: 0 0 1.5em;
+}
+.sticky {
+  display: block;
+}
+.bypostauthor {
+  display: block;
+}
+/* Clearing */
+.clear {
+  clear: both;
+}
+/* Navigation */
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:active>.dropdown-menu,
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:active>a:after {
+  border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
+/* Here some needed widget styles
+ * Most widgets are adapted in the file bootstrap-wp.js - and REALLY easy to modify! ;) */
+.widget {
+  margin-bottom: 2em;
+}
+.widget_nav_menu ul.sub-menu li,
+.widget_pages ul.children li {
+  padding-left: 15px;
+}
+/* Hiding the search widget's button in widgets. thats just too old-skool. :) but if you want it back, just delete the next line.
+ * Note: you can change the whole appearance of the search_form() function in our searchform.php */
+.widget_search .search-form input[type="submit"] {
+  display: none;
+}
+/* Make sure select elements fit in widgets */
+.widget select {
+  max-width: 100%;
+}
+/* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!
+ * For example with some margin, like the line below ;) Delete, modify, change classes in HTML if you desire another style */
+.comment .children {
+  margin-left: 1.5em;
+}
+/**
+* Some WP Theme Repository requirements
+*/
+.entry-meta {
+  clear: both;
+}
+/*
+ == Quick CSS styling tips ==
+
+ You can start off in a rough direction with some minimal styles.
+ See below for some tips. ;)
+
+
+ == Want to have the whole site wrapped? ==
+
+ Just fill the .container class with some background color to have a the whole site "wrapped".
+ This works so easy because every main part is wrapped only once into a container class by bootstrap.
+ Try out by decommenting the next line and go from there.
+
+ .container { background: #f9f9f9; border-right: 1px solid #eee; border-left: 1px solid #eee; }
+
+
+ == Want to wrap just the content and sidebar in Bootstrap style? ==
+
+ That one is a great example to show that some things are much cleaner and easier to do via just adding some HTML classes.
+ In this case, we will add just one CSS class "panel", look for example at the beginning in content.php!
+
+
+ == Infinite Scrolling by Jetpack ==
+ You can enable this cool feature by simply decommenting the lines below and make sure you use the same classes on the right place in your html..
+
+/* Globally hidden elements when Infinite Scroll is supported and in use.
+ * Older / Newer Posts Navigation (the pagination, must always be hidden), Theme Footer only when set to scrolling.. */
+/*
+.infinite-scroll .page-links,
+.infinite-scroll.neverending .site-footer {
+	display: none;
+}
+*/
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+/*
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+*/
+/* Hey, if you don't need my comments anymore, just delete me! :)  */
+/* styles for _tk_pagination und _tk_link_pages */
+nav form.tk-page-nav,
+nav .input-group,
+nav .input-group-btn,
+nav .form-control {
+  display: inline;
+}
